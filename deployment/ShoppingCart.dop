@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="ShoppingCart" usingRuleflow="true" ruleflowName="FinalFlow" targetRuleProjectName="ShoppingCartRULE">
+  <name>ShoppingCart</name>
+  <uuid>27db8832-b057-49d3-bd18-4b37b922edb0</uuid>
+  <referencedVariables variableName="discount" variableSetName="Variables" direction="OUT">
+    <variableSet href="../rules/Variables.var#b6db6745-44f2-4431-a5e9-898d77974513"/>
+  </referencedVariables>
+  <referencedVariables variableName="customerCart" variableSetName="Variables" direction="IN_OUT">
+    <variableSet href="../rules/Variables.var#b6db6745-44f2-4431-a5e9-898d77974513"/>
+  </referencedVariables>
+  <referencedVariables variableName="totalPrice" variableSetName="Variables" direction="OUT">
+    <variableSet href="../rules/Variables.var#b6db6745-44f2-4431-a5e9-898d77974513"/>
+  </referencedVariables>
+  <referencedVariables variableName="creditedCoins" variableSetName="Variables" direction="OUT">
+    <variableSet href="../rules/Variables.var#b6db6745-44f2-4431-a5e9-898d77974513"/>
+  </referencedVariables>
+  <referencedVariables variableName="totalSavings" variableSetName="Variables" direction="OUT">
+    <variableSet href="../rules/Variables.var#b6db6745-44f2-4431-a5e9-898d77974513"/>
+  </referencedVariables>
+  <referencedVariables variableName="properties" variableSetName="Variables" direction="OUT">
+    <variableSet href="../rules/Variables.var#b6db6745-44f2-4431-a5e9-898d77974513"/>
+  </referencedVariables>
+  <ruleflow href="../rules/FinalFlow.rfl#ee1b1a06-f420-4daa-a9d3-525ecaa57d3e"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="ShoppingCart_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../ShoppingCartRULE#243e97d4-89ab-41df-baf5-c36af0578eb0"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

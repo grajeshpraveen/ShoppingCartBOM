@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.rule:Function xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.rule="http://ilog.rules.studio/model/rule.ecore">
+  <name>functionTest</name>
+  <uuid>bb4d8228-01fc-4dfa-97d9-a7adf8e5829c</uuid>
+  <definition><![CDATA[]]></definition>
+  <imports>use customerId;</imports>
+</ilog.rules.studio.model.rule:Function>

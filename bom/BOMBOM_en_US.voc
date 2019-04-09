@@ -1,0 +1,23 @@
+# Vocabulary Properties
+uuid = 0a287815-1027-4e32-806f-86562e35cf30
+
+# com.Cart
+com.Cart#concept.label = cart
+com.Cart.itemName#phrase.action = set the item name of {this} to {item name}
+com.Cart.itemName#phrase.navigation = {item name} of {this}
+com.Cart.price#phrase.action = set the price of {this} to {price}
+com.Cart.price#phrase.navigation = {price} of {this}
+com.Cart.quantity#phrase.action = set the quantity of {this} to {quantity}
+com.Cart.quantity#phrase.navigation = {quantity} of {this}
+
+# com.CustomerDetails
+com.CustomerDetails#concept.label = customer details
+com.CustomerDetails.cart#phrase.action = set the carts of {this} to {cart}
+com.CustomerDetails.cart#phrase.navigation = {cart} of {this}
+com.CustomerDetails.categoryId#phrase.action = set the category id of {this} to {category id}
+com.CustomerDetails.categoryId#phrase.navigation = {category id} of {this}
+com.CustomerDetails.customerName#phrase.action = set the customer name of {this} to {customer name}
+com.CustomerDetails.customerName#phrase.navigation = {customer name} of {this}
+com.CustomerDetails.findCategory()#phrase.navigation = {this}.findCategory()
+com.CustomerDetails.propValues#phrase.navigation = {prop values} of {this}
+com.CustomerDetails.totalPrice()#phrase.navigation = {this}.totalPrice()

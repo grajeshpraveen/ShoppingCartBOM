@@ -1,0 +1,9 @@
+variables {
+  java.lang.String customerId;
+  double discount;
+  com.CustomerDetails customerCart;
+  double totalPrice;
+  java.lang.Integer creditedCoins;
+  double totalSavings;
+  java.lang.String properties;
+}

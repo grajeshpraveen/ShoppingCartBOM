@@ -1,0 +1,16 @@
+rule categoryDiscount {
+   property ilog.rules.business_name = "categoryDiscount";
+   property ilog.rules.package_name = "";
+   property status = "new";
+   when {
+      com.CustomerDetails() from customerCart;
+      evaluate ((((customerCart.findCategory().equals("GOLD"))) || ((customerCart.findCategory().equals("PLATINUM"))) || ((customerCart.findCategory().equals("SLIVER")))));
+   } then {
+      discount = discount + 5;
+      ?context.updateContext();
+   } else {
+      discount = discount;
+      ?context.updateContext();
+   }
+}
+

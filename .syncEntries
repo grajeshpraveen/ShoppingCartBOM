@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><teamservers>
+<teamserver>
+<target dataSource="" login="admin" url="http://localhost:9080/teamserver"/>
+<entry baseType="BRLRule" checksum="34093337" projectName="ShoppingCartRULE" qualifiedName="categoryDiscount" sourceCS="DE91BD955D903363EA2B9B9700CBE803" targetCS="34093337" type="BRLRule" uuid="eb2aac3d-8564-4744-b33b-00709df73432"/>
+<entry baseType="BusinessObjectModel" checksum="1361954401" projectName="ShoppingCartRULE" qualifiedName="BOM1" sourceCS="806F3C0A6386C071C62812D079FDF271" targetCS="1361954401" type="BusinessObjectModel" uuid="abb12a8e-fa27-4402-a26c-debf06c72781"/>
+<entry baseType="DecisionOperation" checksum="4007447639" projectName="ShoppingCartRULE" qualifiedName="ShoppingCart" sourceCS="78CD2B381F1926BF806339686F83FEC8" targetCS="4007447639" type="DecisionOperation" uuid="27db8832-b057-49d3-bd18-4b37b922edb0"/>
+<entry baseType="DecisionTree" checksum="1332652335" projectName="ShoppingCartRULE" qualifiedName="ShoppingTree" sourceCS="256D42310D50F950BDC45F9146F33CB2" targetCS="1332652335" type="DecisionTree" uuid="bf49fcbf-b957-495e-bf10-542e7cc76700"/>
+<entry baseType="DeploymentConfiguration" checksum="2477771279" projectName="ShoppingCartRULE" qualifiedName="ShoppingCart" sourceCS="3FB2E411C3FD63BF79AE6FD30FDF87A8" targetCS="2477771279" type="DeploymentConfiguration" uuid="bbec7ea4-471d-4f3a-bee4-77dc505e9c99"/>
+<entry baseType="Resource" checksum="2977781481" projectName="ShoppingCartRULE" qualifiedName="META-INF/deployment.xml" sourceCS="9F677FF1E49B5EE73ACA2E05379CEED7" targetCS="2977781481" type="Resource" uuid="META-INF/deployment.xml"/>
+<entry baseType="Ruleflow" checksum="3174665385" projectName="ShoppingCartRULE" qualifiedName="FinalFlow" sourceCS="41A325FE6DA5B0F7BD56C89778BD9D18" targetCS="3174665385" type="Ruleflow" uuid="ee1b1a06-f420-4daa-a9d3-525ecaa57d3e"/>
+<entry baseType="RuleProjectInfo" checksum="507067677" projectName="ShoppingCartRULE" qualifiedName="ShoppingCartRULE" sourceCS="C99FDE6EE623B933C0EE9A4DA0753554" targetCS="507067677" type="RuleProjectInfo" uuid="243e97d4-89ab-41df-baf5-c36af0578eb0"/>
+<entry baseType="VariableSet" checksum="2759029233" projectName="ShoppingCartRULE" qualifiedName="Variables" sourceCS="2E67A0629191C39FFE9D0ADA60CEEFF3" targetCS="2759029233" type="VariableSet" uuid="b6db6745-44f2-4431-a5e9-898d77974513"/>
+<entry baseType="Vocabulary" checksum="1361954401" projectName="ShoppingCartRULE" qualifiedName="BOM1_en_US" sourceCS="1C00901BA17AD24C13ECD930ED1C1043" targetCS="1361954401" type="Vocabulary" uuid="20a567e3-a15d-48b4-b295-b414bce2fc5f"/>
+</teamserver>
+</teamservers>

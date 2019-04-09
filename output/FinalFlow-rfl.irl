@@ -1,0 +1,44 @@
+use creditedCoins;
+use customerCart;
+use discount;
+use properties;
+use totalPrice;
+use totalSavings;
+
+flowtask FinalFlow {
+  property mainflowtask = false;
+  property ilog.rules.business_name = "FinalFlow";
+  property ilog.rules.package_name = "";
+  body {
+    FinalFlow#ShoppingTree;
+    if (discount > 0) {
+      FinalFlow#categoryDiscount;
+    }
+  }
+};
+
+ruletask FinalFlow#ShoppingTree {
+  property ilog.rules.business_name = "FinalFlow>ShoppingTree";
+  property ilog.rules.package_name = "";
+  algorithm = sequential;
+  property ilog.rules.engine.sequential.fastpath = true;
+  ordering = sorted;
+  body {
+    group("ShoppingTree")
+  }
+};
+
+ruletask FinalFlow#categoryDiscount {
+  property ilog.rules.business_name = "FinalFlow>categoryDiscount";
+  property ilog.rules.package_name = "";
+  algorithm = sequential;
+  property ilog.rules.engine.sequential.fastpath = true;
+  ordering = sorted;
+  finalaction {
+    totalPrice = customerCart.totalPrice() - customerCart.totalPrice() * discount / 100;creditedCoins = java.lang.Integer.valueOf((int)(totalPrice / 50));totalSavings = customerCart.totalPrice() * discount / 100;properties = customerCart.findCategory();?context.updateContext();
+  };
+  body {
+    categoryDiscount
+  }
+};
+

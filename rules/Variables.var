@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Variables</name>
+  <uuid>b6db6745-44f2-4431-a5e9-898d77974513</uuid>
+  <variables name="customerId" type="java.lang.String" initialValue="" verbalization="customerID"/>
+  <variables name="discount" type="double" initialValue="" verbalization="discount"/>
+  <variables name="customerCart" type="com.CustomerDetails" initialValue="" verbalization="customerCart"/>
+  <variables name="totalPrice" type="double" initialValue="" verbalization="totalPrice"/>
+  <variables name="creditedCoins" type="java.lang.Integer" initialValue="" verbalization="creditedCoins"/>
+  <variables name="totalSavings" type="double" initialValue="" verbalization="totalSavings"/>
+  <variables name="properties" type="java.lang.String" initialValue="" verbalization="properties"/>
+</ilog.rules.studio.model.base:VariableSet>

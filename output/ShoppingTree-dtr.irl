@@ -1,0 +1,104 @@
+// begin DT ShoppingTree
+// -- begin rule 'ShoppingTree 0'
+rule ShoppingTree_0 {
+   property ilog.rules.business_name = "ShoppingTree 1";
+   property ilog.rules.dt = "ShoppingTree";
+   property ilog.rules.group = "ShoppingTree";
+   property ilog.rules.package_name = "";
+   property status = "new";
+   when {
+      com.CustomerDetails() from customerCart;
+      evaluate ((((ilog.rules.brl.IlrCollectionUtil.getSize(customerCart.cart) > 0) == (true)) && (customerCart.totalPrice() in [1000, 1500])));
+   } then {
+      discount = 5;
+      ?context.updateContext();
+   }
+}
+
+// -- end rule 'ShoppingTree 0'
+// -- begin rule 'ShoppingTree 1'
+rule ShoppingTree_1 {
+   property ilog.rules.business_name = "ShoppingTree 2";
+   property ilog.rules.dt = "ShoppingTree";
+   property ilog.rules.group = "ShoppingTree";
+   property ilog.rules.package_name = "";
+   property status = "new";
+   when {
+      com.CustomerDetails() from customerCart;
+      evaluate ((((ilog.rules.brl.IlrCollectionUtil.getSize(customerCart.cart) > 0) == (true)) && (customerCart.totalPrice() in [1500, 2000])));
+   } then {
+      discount = 8;
+      ?context.updateContext();
+   }
+}
+
+// -- end rule 'ShoppingTree 1'
+// -- begin rule 'ShoppingTree 2'
+rule ShoppingTree_2 {
+   property ilog.rules.business_name = "ShoppingTree 3";
+   property ilog.rules.dt = "ShoppingTree";
+   property ilog.rules.group = "ShoppingTree";
+   property ilog.rules.package_name = "";
+   property status = "new";
+   when {
+      com.CustomerDetails() from customerCart;
+      evaluate ((((ilog.rules.brl.IlrCollectionUtil.getSize(customerCart.cart) > 0) == (true)) && (customerCart.totalPrice() in [2000, 3000])));
+   } then {
+      discount = 10;
+      ?context.updateContext();
+   }
+}
+
+// -- end rule 'ShoppingTree 2'
+// -- begin rule 'ShoppingTree 3'
+rule ShoppingTree_3 {
+   property ilog.rules.business_name = "ShoppingTree 4";
+   property ilog.rules.dt = "ShoppingTree";
+   property ilog.rules.group = "ShoppingTree";
+   property ilog.rules.package_name = "";
+   property status = "new";
+   when {
+      com.CustomerDetails() from customerCart;
+      evaluate ((((ilog.rules.brl.IlrCollectionUtil.getSize(customerCart.cart) > 0) == (true)) && (customerCart.totalPrice() in [3000, 5000])));
+   } then {
+      discount = 11;
+      ?context.updateContext();
+   }
+}
+
+// -- end rule 'ShoppingTree 3'
+// -- begin rule 'ShoppingTree 4'
+rule ShoppingTree_4 {
+   property ilog.rules.business_name = "ShoppingTree 5";
+   property ilog.rules.dt = "ShoppingTree";
+   property ilog.rules.group = "ShoppingTree";
+   property ilog.rules.package_name = "";
+   property status = "new";
+   when {
+      com.CustomerDetails() from customerCart;
+      evaluate ((((ilog.rules.brl.IlrCollectionUtil.getSize(customerCart.cart) > 0) == (true)) && (customerCart.totalPrice() in [5000, 99999])));
+   } then {
+      discount = 12;
+      ?context.updateContext();
+   }
+}
+
+// -- end rule 'ShoppingTree 4'
+// -- begin rule 'ShoppingTree 5'
+rule ShoppingTree_5 {
+   property ilog.rules.business_name = "ShoppingTree 6";
+   property ilog.rules.dt = "ShoppingTree";
+   property ilog.rules.group = "ShoppingTree";
+   property ilog.rules.package_name = "";
+   property status = "new";
+   when {
+      com.CustomerDetails() from customerCart;
+      evaluate ((((ilog.rules.brl.IlrCollectionUtil.getSize(customerCart.cart) > 0) == (false))));
+   } then {
+      discount = 0;
+      ?context.updateContext();
+   }
+}
+
+// -- end rule 'ShoppingTree 5'
+// end DT ShoppingTree

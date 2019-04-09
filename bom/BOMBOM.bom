@@ -1,0 +1,26 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/ShoppingCartRULE//ShoppingCartXOM"
+property uuid "15ced602-785e-4c81-a30f-773fe2e314f5"
+package com;
+
+
+public class Cart
+{
+    public string itemName;
+    public double price;
+    public double quantity;
+    public Cart();
+}
+
+public class CustomerDetails
+{
+    public java.util.List cart domain 0,* class com.Cart;
+    public string categoryId;
+    public string customerName;
+    public readonly string propValues;
+    public CustomerDetails();
+    public string findCategory();
+    public double totalPrice();
+}
+
